@@ -25,7 +25,8 @@ def main():
     
     print(f"Starting brute force attack on {target_ssid}...")
     print(f"Using charset: {charset}")
-    print(f"Max password length: {max_length}")
+    print(f"Password length: {max_length}")
+    print(f"Total possible combinations: 10^{max_length} = {10**max_length:,}")
     
     password, attempts, duration = brute_force_wifi(target_ssid, charset, max_length)
     

@@ -62,15 +62,6 @@
         "documentation": {}
     },
     {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
-        "documentation": {}
-    },
-    {
         "label": "try_connect_wifi",
         "importPath": "wifi_connector",
         "description": "wifi_connector",
@@ -100,6 +91,15 @@
         "description": "brute_forcer",
         "isExtraImport": true,
         "detail": "brute_forcer",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
         "documentation": {}
     },
     {
@@ -215,7 +215,7 @@
         "kind": 2,
         "importPath": "src.brute_forcer",
         "description": "src.brute_forcer",
-        "peekOfCode": "def brute_force_wifi(ssid, charset, max_length=4):\n    \"\"\"Brute force the WiFi password using the given character set.\"\"\"\n    attempts = 0\n    start_time = time.time()\n    for length in range(max_length, max_length + 1):\n        for combo in itertools.product(charset, repeat=length):\n            password = \"\".join(combo)\n            attempts += 1\n            logging.info(f\"Attempt {attempts}: Trying password {password}\")\n            if try_connect_wifi(ssid, password):",
+        "peekOfCode": "def brute_force_wifi(ssid, charset, max_length=4):\n    \"\"\"Brute force the WiFi password using the given character set.\"\"\"\n    attempts = 0\n    start_time = time.time()\n    for length in range(max_length, max_length + 1):\n        for combo in itertools.product(charset, repeat=length):\n            password = \"\".join(combo)\n            attempts += 1\n            print(f\"Attempt {attempts} => {password}\")\n            if try_connect_wifi(ssid, password):",
         "detail": "src.brute_forcer",
         "documentation": {}
     },
