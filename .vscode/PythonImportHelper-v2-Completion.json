@@ -1,0 +1,267 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "itertools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "itertools",
+        "description": "itertools",
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "try_connect_wifi",
+        "importPath": "wifi_connector",
+        "description": "wifi_connector",
+        "isExtraImport": true,
+        "detail": "wifi_connector",
+        "documentation": {}
+    },
+    {
+        "label": "list_wifi_networks",
+        "importPath": "wifi_scanner",
+        "description": "wifi_scanner",
+        "isExtraImport": true,
+        "detail": "wifi_scanner",
+        "documentation": {}
+    },
+    {
+        "label": "select_network",
+        "importPath": "wifi_scanner",
+        "description": "wifi_scanner",
+        "isExtraImport": true,
+        "detail": "wifi_scanner",
+        "documentation": {}
+    },
+    {
+        "label": "brute_force_wifi",
+        "importPath": "brute_forcer",
+        "description": "brute_forcer",
+        "isExtraImport": true,
+        "detail": "brute_forcer",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "xml.etree.ElementTree",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xml.etree.ElementTree",
+        "description": "xml.etree.ElementTree",
+        "detail": "xml.etree.ElementTree",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"wifi-cracker\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"wifi-cracker\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"wifi-cracker\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"wifi-cracker\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"wifi-cracker\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "brute_force_wifi",
+        "kind": 2,
+        "importPath": "src.brute_forcer",
+        "description": "src.brute_forcer",
+        "peekOfCode": "def brute_force_wifi(ssid, charset, max_length=4):\n    \"\"\"Brute force the WiFi password using the given character set.\"\"\"\n    attempts = 0\n    start_time = time.time()\n    for length in range(max_length, max_length + 1):\n        for combo in itertools.product(charset, repeat=length):\n            password = \"\".join(combo)\n            attempts += 1\n            logging.info(f\"Attempt {attempts}: Trying password {password}\")\n            if try_connect_wifi(ssid, password):",
+        "detail": "src.brute_forcer",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def main():\n    print(\"WiFi Password Cracker (Educational Demo)\")\n    print(\"======================================\")\n    print(\"This script is for cracking your own mobile hotspot password.\")\n    print(\"Ensure you have permission and run with administrator privileges.\")\n    print(\"======================================\\n\")\n    ssids = list_wifi_networks()\n    if not ssids:\n        print(\"No networks available. Exiting.\")\n        return",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "generate_wifi_profile",
+        "kind": 2,
+        "importPath": "src.wifi_connector",
+        "description": "src.wifi_connector",
+        "peekOfCode": "def generate_wifi_profile(ssid, password):\n    \"\"\"Generate a WiFi profile XML file for connection.\"\"\"\n    profile = f\"\"\"<?xml version=\"1.0\"?>\n<WLANProfile xmlns=\"http://www.microsoft.com/networking/WLAN/profile/v1\">\n    <name>{ssid}</name>\n    <SSIDConfig>\n        <SSID>\n            <name>{ssid}</name>\n        </SSID>\n    </SSIDConfig>",
+        "detail": "src.wifi_connector",
+        "documentation": {}
+    },
+    {
+        "label": "try_connect_wifi",
+        "kind": 2,
+        "importPath": "src.wifi_connector",
+        "description": "src.wifi_connector",
+        "peekOfCode": "def try_connect_wifi(ssid, password):\n    \"\"\"Attempt to connect to the WiFi network with the given password.\"\"\"\n    try:\n        profile_path = generate_wifi_profile(ssid, password)\n        subprocess.run([\"netsh\", \"wlan\", \"add\", \"profile\", f\"filename={profile_path}\"], capture_output=True, check=True)\n        result = subprocess.run([\"netsh\", \"wlan\", \"connect\", f\"name={ssid}\"], capture_output=True, text=True, check=True)\n        time.sleep(2)\n        status = subprocess.run([\"netsh\", \"wlan\", \"show\", \"interfaces\"], capture_output=True, text=True, check=True)\n        if f\"SSID                   : {ssid}\" in status.stdout and \"State                  : connected\" in status.stdout:\n            logging.info(f\"Successfully connected to {ssid} with password: {password}\")",
+        "detail": "src.wifi_connector",
+        "documentation": {}
+    },
+    {
+        "label": "list_wifi_networks",
+        "kind": 2,
+        "importPath": "src.wifi_scanner",
+        "description": "src.wifi_scanner",
+        "peekOfCode": "def list_wifi_networks():\n    \"\"\"List available WiFi networks using netsh (Windows).\"\"\"\n    try:\n        result = subprocess.run([\"netsh\", \"wlan\", \"show\", \"networks\"], capture_output=True, text=True, check=True)\n        output = result.stdout\n        ssids = re.findall(r\"SSID \\d+ : (.+)\", output)\n        if not ssids:\n            logging.error(\"No WiFi networks found. Ensure WiFi is enabled.\")\n            return []\n        logging.info(\"Available WiFi networks:\")",
+        "detail": "src.wifi_scanner",
+        "documentation": {}
+    },
+    {
+        "label": "select_network",
+        "kind": 2,
+        "importPath": "src.wifi_scanner",
+        "description": "src.wifi_scanner",
+        "peekOfCode": "def select_network(ssids):\n    \"\"\"Prompt user to select a WiFi network.\"\"\"\n    while True:\n        try:\n            choice = int(input(\"Enter the number of your mobile hotspot WiFi (e.g., 1): \"))\n            if 1 <= choice <= len(ssids):\n                return ssids[choice - 1]\n            print(f\"Please enter a number between 1 and {len(ssids)}.\")\n        except ValueError:\n            print(\"Please enter a valid number.\")",
+        "detail": "src.wifi_scanner",
+        "documentation": {}
+    }
+]
